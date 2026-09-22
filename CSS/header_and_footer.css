@@ -51,8 +51,15 @@ li a{
     text-decoration: none;
 }
 
-li a:hover{
-    color: red; /* test */
+
+#nav_link_highlights:hover{
+
+    background-image: url("/assets/img/nav_link_highlight_bg_img.svg");
+    background-repeat: no-repeat;
+    background-size: 120px 13px;
+    /* background-position: ; */
+
+    transform: rotate(-175deg); 
 }
 
 li a:active{
