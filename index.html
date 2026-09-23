@@ -13,22 +13,24 @@
 </head>
 
 <body>
-    <header id="header">
+    <header id="header_section">
 
         <section class="logo_and_nav">
-            <img id="header_logo" src="../assets/icons/header/travel_blog_logo.svg" alt="travel_blog_logo">
+            <a href="index.html">
+                <img id="header_logo" src="../assets/icons/header/travel_blog_logo.svg" alt="travel_blog_logo">
+            </a>
             <nav>
                 <ul>
                     <li class="nav_link nav_link_highlights">
-                        <a id="nav_link_highlights" href="#highlights">Highlights</a>
+                        <a id="nav_link_highlights" href="#highlights_section">Highlights</a>
                         <img id="nav_img_highlights" src="../assets/img/header/nav_link_highlights_underline.svg">
                     </li>
                     <li class="nav_link nav_link_faq">
-                        <a id="nav_link_faq" href="#faq">FAQ</a>
+                        <a id="nav_link_faq" href="#faq_section">FAQ</a>
                         <img id="nav_img_faq" src="../assets/img/header/nav_link_faq_underline.svg">
                     </li>
                     <li class="nav_link nav_link_contact">
-                        <a id="nav_link_contact" href="#contact">Contact</a>
+                        <a id="nav_link_contact" href="#contact_section">Contact</a>
                         <img id="nav_img_contact" src="../assets/img/header/nav_link_contact_underline.svg">
                     </li>
                 </ul>
@@ -37,16 +39,57 @@
     </header>
 
     <main>
-        <section id="hero" class="hero">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo harum
+        <section id="hero_section">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, illo harum
             obcaecati quia optio sequi laudantium adipisci necessitatibus voluptate, eveniet at sit consequuntur dolor
             quisquam beatae mollitia a iure excepturi?</section>
-        <section id="highlights" class="highlights">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+        <section id="highlights_section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
             velit consequuntur quam ipsam quibusdam ab nulla illo eligendi modi aut obcaecati fuga maiores at ea
             exercitationem corrupti soluta iste unde.</section>
-        <section id="faq" class="faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore? Sapiente
-            hic nobis voluptatum ipsa asperiores aliquid magnam neque autem dignissimos omnis, suscipit assumenda
-            nesciunt ullam pariatur porro quaerat architecto!</section>
-        <section id="contact" class="contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur odit,
+
+        <section id="faq_section">
+            <header class="header_faq_section">
+                <img src="./assets/icons/faq/question_mark_alt.svg" alt="question_mark_icon">
+                <h2>FAQ</h2>
+
+            </header>
+            <section class="faq_details_section">
+                <details class="faq_detail">
+                    <summary>What’s the story behind my travel blog?</summary>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem odit veniam ut adipisci pariatur
+                        placeat, a soluta corporis, modi vel doloribus amet aliquid deserunt voluptas laboriosam
+                        repellendus tempore nostrum! Reprehenderit.</p>
+                </details>
+                <details class="faq_detail">
+                    <summary></summary>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem odit veniam ut adipisci pariatur
+                        placeat, a soluta corporis, modi vel doloribus amet aliquid deserunt voluptas laboriosam
+                        repellendus tempore nostrum! Reprehenderit.</p>
+                </details>
+                <details class="faq_detail">
+                    <summary></summary>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem odit veniam ut adipisci pariatur
+                        placeat, a soluta corporis, modi vel doloribus amet aliquid deserunt voluptas laboriosam
+                        repellendus tempore nostrum! Reprehenderit.</p>
+                </details>
+                <details class="faq_detail">
+                    <summary></summary>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem odit veniam ut adipisci pariatur
+                        placeat, a soluta corporis, modi vel doloribus amet aliquid deserunt voluptas laboriosam
+                        repellendus tempore nostrum! Reprehenderit.</p>
+                </details>
+
+
+
+            </section>
+
+
+
+
+
+
+        </section>
+        <section id="contact_section" class="contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+            odit,
             debitis placeat quia nam quaerat commodi molestias laudantium incidunt aut hic voluptas provident quasi, at
             eveniet voluptates molestiae voluptate tempora?</section>
     </main>
@@ -55,7 +98,7 @@
         <section class="footer_content_left">
             <div class="copyright">
                 <img src="./assets\icons\footer\copyright_logo.svg" alt="">
-                <a href="index.html#header">Travel Blog 2026</a>
+                <a href="index.html#header_section">Travel Blog 2026</a>
             </div>
             <a href="imprint.html">Imprint</a>
             <a href="cookie_prefs.html">Cookie Preferences</a>
