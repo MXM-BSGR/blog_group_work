@@ -1,11 +1,21 @@
-/* #region HERO */
+* {
+  margin: 0;
+}
+
+:root {
+  --color-primary: rgba(78, 164, 135, 1);
+  --color-accent: rgba(241, 201, 83, 1);
+  --color-primary-light: rgba(78, 164, 135, 0.2);
+}
+
 .hero {
   position: relative;
   width: 100%;
   max-width: 1440px;
-  height: 540px; /* Etwas höher, damit das gelbe Element unten Platz hat */
+  height: 533px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .hero-image {
@@ -13,7 +23,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 515px; /* Das Foto behält seine 515px Höhe */
+  height: 515px;
   z-index: 1;
 }
 
@@ -21,6 +31,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 75% 35%;
   display: block;
 }
 
@@ -29,7 +40,7 @@
   top: 0;
   left: 0;
   width: 647px;
-  height: 540px; /* Darf die vollen 540px haben, ragt dadurch unten über das Bild hinaus */
+  height: 540px;
   object-fit: fill;
   z-index: 2;
   pointer-events: none;
@@ -61,43 +72,49 @@
   color: rgba(84, 55, 13, 1);
 }
 
-.hero .badge {
+.badge-wrapper {
   position: absolute;
   top: 69%;
   left: 520px;
   transform: translate(-50%, -50%);
   z-index: 4;
+  width: 150px;
 }
 
 .badge {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 100%;
 }
 
-.badge-bg {
+.badge::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.badge-bg,
+.badge-text,
+.badge-flag {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
 .badge-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 125px;
-  height: 125px;
-  transform: translate(-50%, -50%);
+  width: 83%;
+  height: 83%;
+  top: 8.5%;
+  left: 8.5%;
   animation: spin 14s linear infinite;
 }
 
 .badge-flag {
-  position: absolute;
   top: 50%;
   left: 50%;
-  width: 55px;
-  height: 55px;
+  width: 37%;
+  height: 37%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -106,10 +123,84 @@
 
 @keyframes spin {
   from {
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-/* #endregion */
+
+@media screen and (min-width: 1441px) {
+  .hero {
+    height: 547px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    height: 533px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-yellow-shape {
+    width: clamp(0px, calc(191.99vw - 1472.68px), 647px);
+  }
+
+  .hero-text {
+    opacity: clamp(0, calc((100vw - 767px) / 337px), 1);
+  }
+  .badge-wrapper {
+    opacity: clamp(0, calc((100vw - 767px) / 337px), 1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 515px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65% 30%;
+  }
+
+  .hero-yellow-shape {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 58%;
+    object-fit: fill;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .hero-text {
+    display: none;
+  }
+
+  .badge-wrapper {
+    top: 39%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 42.5%;
+    max-width: 170px;
+  }
+}
