@@ -1,8 +1,10 @@
 * {
     margin: 0;
     box-sizing: border-box;
+
 }
 
+/* #region header*/
 header {
     width: 100dvw;
 
@@ -14,14 +16,14 @@ header {
 
 }
 
-.logo_and_nav {   
+.logo_and_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     gap: 102px;
 
-    padding: 32px 0 32px 145px ;
+    padding: 32px 0 32px 145px;
 }
 
 
@@ -41,7 +43,7 @@ ul {
 }
 
 
-.nav_link{
+.nav_link {
     position: relative;
     width: fit-content;
     height: fit-content;
@@ -50,17 +52,18 @@ ul {
 }
 
 
-.nav_link_highlights img{
+.nav_link_highlights img {
     width: 120px;
     position: absolute;
-    bottom: 3px;;
+    bottom: 3px;
+    ;
     left: -3px;
 
     display: none;
 }
 
 
-.nav_link_faq img{
+.nav_link_faq img {
     width: 55px;
     position: absolute;
     bottom: 7px;
@@ -68,11 +71,11 @@ ul {
 
     display: none;
 
-    transform:rotate(2deg);
+    transform: rotate(2deg);
 }
 
 
-.nav_link_contact img{
+.nav_link_contact img {
     width: 90px;
     position: absolute;
     bottom: 7px;
@@ -82,13 +85,13 @@ ul {
 }
 
 
-.nav_link:hover img{
+.nav_link:hover img {
     display: block;
     z-index: 0;
 }
 
 
-.nav_link a{    
+.nav_link a {
     font-family: var(--arima);
     font-size: 24px;
     font-weight: 700;
@@ -98,7 +101,80 @@ ul {
 }
 
 
-.nav_link a:active{
+.nav_link a:active {
     color: #F1C953;
 }
 
+/* #endregion */
+
+/* #region footer*/
+footer {
+    width: 100dvw;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 60px 120px;
+
+
+    font-family: var(--palanquin);
+    color: #FFFFFF;
+
+    background-color: #4EA487;
+}
+
+.footer_content_left {
+    display: flex;
+    width: fit-content;
+    gap: 72px;
+
+    font-size: 16px;
+}
+
+.copyright img {
+    width: 20px;
+}
+
+.copyright {
+    height: 32px;
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+}
+
+.copyright a {
+    font-size: 18px;
+}
+
+
+
+.footer_content_left a {
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.external_links {
+    /* height: 32px; */
+    display: flex;
+    align-items: center;
+
+
+    gap: 16px;
+}
+
+.external_links a {
+    display: flex;
+}
+
+.external_links_logo {
+    height: 32px;
+
+}
+
+
+
+/* #endregion */
