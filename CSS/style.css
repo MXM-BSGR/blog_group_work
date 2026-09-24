@@ -1,16 +1,23 @@
-  * {
+* {
     margin: 0;
     box-sizing: border-box;
 }
+
+
 
 main {
     display: flex;
     flex-direction: column;
 
+    padding: 120px;
+
     gap: 120px;
 }
 
-#faq {
+
+/* #region faq*/
+
+#faq_section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,12 +26,16 @@ main {
 
 }
 
-.header_faq_section img {
+
+#header_faq_section img {
     width: 48px;
     height: 48px;
+
 }
 
-.header_faq_section {
+
+#header_faq_section {
+    height: 50px;
 
     display: flex;
     justify-content: center;
@@ -32,74 +43,96 @@ main {
 
     gap: 8px;
 
-
-
-
-
 }
 
-.header_faq_section h2 {
-    height: fit-content;
 
+#header_faq_section h2 {
     font-family: var(--arima);
     font-size: 52px;
     font-weight: bold;
     color: #4EA487;
 }
 
-.faq_details_section {
+
+#faq_details_section {
     width: 100%;
 
     display: flex;
     flex-direction: column;
 
-    padding: 16px 14px;
-
     gap: 32px;
 
-        font-family: var(--palanquin);
+    font-family: var(--palanquin);
 
 }
+
 
 .faq_detail {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* position:absolute; */
     justify-content: space-between;
 
     border-radius: 12px;
     padding: 16px 14px;
 
+    /* gap:10px; */
+
     background-color: #F1C953;
 }
 
 
-summary{   
-
+summary {
     list-style: none;
     font-family: var(--palanquin);
     font-weight: 700;
     font-size: 24px;
 
     color: #54370D;
+
 }
 
-.details_opener{
-    /* position: relative;
-    right: 0; */
 
-    
+.summary_area {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
 }
 
-.details_opener:active{
-    /* position: relative;
-    right: 0; */
+
+.details_opener {
+width: 19px;
+height: 11px;
+
+flex-shrink: 0;
+transition: all 0.2s ease;
+
+}
+
+/* .details_opener:active{
+
 transform:rotate(180deg);
-    
+
+} */
+/* .summary_area[target=_open]:active{
+flex-shrink: 0;
+transition: all 0.2s ease;
+
+transform:rotate(180deg);
+
+} */
+details[open] img {
+    transform: rotate(180deg);
 }
 
-.summary_text{
+
+details[open] {
+    gap: 12px;
+}
+
+
+.summary_text {
     display: flex;
 
     padding: 4px 10px;
@@ -112,4 +145,7 @@ transform:rotate(180deg);
     font-size: 16px;
     font-weight: 500;
     color: #54370D;
+
 }
+
+/* #endregion faq */
