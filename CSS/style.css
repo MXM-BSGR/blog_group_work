@@ -466,14 +466,23 @@ details[open] {
 }
 
 .row_container {
+  width: 530px;
+  height: 95px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  gap: 17px;
 }
 
 .contact_input_row input {
   border: none;
   border-bottom: 1px solid #000;
+  color: var(--color-primary);
+  outline: none;
+  font-size: 24px;
+  padding: unset;
 }
 
 .contact_input_one_line {
@@ -484,12 +493,11 @@ details[open] {
 .contact_input_one_line input {
   border: none;
   border-bottom: 1px solid #000;
+  color: var(--color-primary);
+  outline: none;
+  font-size: 24px;
+  padding: unset;
 }
-
-/* #agree_area {
-  display: flex;
-  justify-content: center;
-} */
 
 #agree_and_submit {
   display: flex;
@@ -500,6 +508,17 @@ details[open] {
   margin-top: 16px;
 
   gap: 32px;
+}
+
+#agree_area {
+  font-family: var(--palanquin);
+  font-weight: 400px;
+}
+
+#pref_link {
+  font-family: var(--palanquin);
+  font-weight: 900px;
+  font-size: 15px;
 }
 
 /* #endregion contact */
