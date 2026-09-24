@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 
 <head>
@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../assets/icons/header/travel_blog_logo.svg">
     <title>Travel Blog</title>
+    <link rel="stylesheet" href="./CSS/fonts.css" />
+    <link rel="stylesheet" href="./CSS/header_and_footer.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+  </head>
+    <header></header>
     <link rel="stylesheet" href="./CSS/fonts.css">
     <link rel="stylesheet" href="./CSS/variables.css">
     <link rel="stylesheet" href="./CSS/header_and_footer.css">
@@ -39,16 +45,122 @@
     </header>
 
     <main>
-        <section id="hero_section">
+      <section class="hero">
+        <div class="hero_image">
+          <img
+            src="assets/img/hero/cappadocia.png"
+            alt="Cappadocia bei Sonnenaufgang"
+          />
+        </div>
+        <img
+          class="hero_yellow_shape"
+          src="assets/img/hero/yellow_bg.png"
+          alt=""
+        />
+        <div class="hero_text">
+          <h1>Cappadocia</h1>
+          <p>
+            From sunrise balloons to hidden cave dwellings, every moment feels
+            unreal in the best way.
+          </p>
+        </div>
+        <div class="badge_wrapper">
+          <div class="badge">
+            <img
+              class="badge_bg"
+              src="assets/img/hero/badge-circle-green.png"
+              alt=""
+            />
+            <img
+              class="badge_text"
+              src="assets/img/hero/badge-text-ring.png"
+              alt=""
+            />
+            <img
+              class="badge_flag"
+              src="assets/img/hero/turkey-flag.png"
+              alt="Turkey"
+            />
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section class="highlights">
+        <div class="highlights-intro">
+          <div class="highlights-headline">
+            <img
+              src="./assets/Icons/rocket_launch.svg"
+              alt=""
+              class="highlights-icon"
+            />
+            <h2>Highlights</h2>
+          </div>
+          <p>
+            From the vibrant cultures of Asia to the sun-drenched islands of the
+            Caribbean and the serene landscapes of Scandinavia, each destination
+            offers a distinct way to explore the world.
+          </p>
+        </div>
 
+        <div class="highlights-slider">
+          <input type="radio" name="highlight-slide" id="hl1" checked />
+          <input type="radio" name="highlight-slide" id="hl2" />
+          <!-- <input type="radio" name="highlight-slide" id="hl3" />
+          <input type="radio" name="highlight-slide" id="hl4" /> -->
 
-        <section id="highlights_section">
+          <div class="highlights-slides">
+            <article class="highlight-slide">
+              <img
+                src="assets/img/highlights/beach.jpg"
+                alt="Frau im gelben Kleid am Strand"
+              />
+              <div class="highlight-text">
+                <h3>The World's Most Breathtaking Beaches</h3>
+                <p>
+                  From powder-soft white sands to dramatic coastlines kissed by
+                  turquoise waves, these
+                  <span class="mobile-hidden"
+                    >beaches are more than destinations – they're
+                    feelings.</span
+                  ><span class="mobile-show">...</span>
+                </p>
+              </div>
+            </article>
 
-        </section>
+            <article class="highlight-slide">
+              <img src="assets/img/highlights/slide2.jpg" alt="" />
+              <div class="highlight-text">
+                <h3>Titel Slide 2</h3>
+                <p>Text Slide 2</p>
+              </div>
+            </article>
 
-        <section id="faq_section">
+            <!-- <article class="highlight-slide">
+              <img src="assets/img/highlights/slide3.jpg" alt="" />
+              <div class="highlight-text">
+                <h3>Titel Slide 3</h3>
+                <p>Text Slide 3</p>
+              </div>
+            </article>
+
+            <article class="highlight-slide">
+              <img src="assets/img/highlights/slide4.jpg" alt="" />
+              <div class="highlight-text">
+                <h3>Titel Slide 4</h3>
+                <p>Text Slide 4</p>
+              </div>
+            </article> -->
+          </div>
+
+          <div class="highlights-dots">
+            <label for="hl1"></label>
+            <label for="hl2"></label>
+            <!-- <label for="hl3"></label>
+            <label for="hl4"></label> -->
+          </div>
+        </div>
+      </section>
+      <section id="faq_section">
             <header id="header_faq_section">
                 <img src="./assets/icons/faq/question_mark.svg" alt="question_mark_icon">
                 <h2>FAQ</h2>
@@ -116,13 +228,7 @@
             </section>
 
         </section>
-
-
-        <section id="contact_section" class="contact">
-
-            CONTACT FORM PLACEHOLDER
-
-        </section>
+      <section class="contact"></section>
     </main>
 
     <footer>
