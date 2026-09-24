@@ -1,7 +1,19 @@
 /* #region Responsive(Hero) */
 @media screen and (min-width: 1441px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .hero {
     height: 547px;
+  }
+
+  #highlights_section {
+    max-width: 1440px;
+  }
+  #faq_section {
+    max-width: 1440px;
   }
 }
 
