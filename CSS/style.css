@@ -293,8 +293,6 @@ main {
   display: flex;
   flex-direction: column;
 
-  padding-inline: 120px;
-
   gap: 120px;
 }
 
@@ -304,6 +302,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-inline: 120px;
 
   gap: 48px;
 }
