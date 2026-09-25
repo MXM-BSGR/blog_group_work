@@ -378,18 +378,6 @@ summary {
   transition: all 0.2s ease;
 }
 
-/* .details_opener:active{
-
-transform:rotate(180deg);
-
-} */
-/* .summary_area[target=_open]:active{
-flex-shrink: 0;
-transition: all 0.2s ease;
-
-transform:rotate(180deg);
-
-} */
 details[open] img {
   transform: rotate(180deg);
 }
@@ -463,6 +451,7 @@ details[open] {
 .contact_input_row {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .row_container {
@@ -513,12 +502,121 @@ details[open] {
 #agree_area {
   font-family: var(--palanquin);
   font-weight: 400px;
+  font-size: 15px;
+}
+
+#check_and_policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+}
+
+#agree_policy {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 14px;
+  height: 14px;
+
+  margin: 3px;
+  border: 2px solid var(--secondary_brown);
+  border-radius: 2px;
+  background-color: #f8fafc;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+
+  /* Für das Zentrieren des Häkchens */
+  display: inline-grid;
+  place-content: center;
+}
+
+#agree_policy:hover {
+  background-color: var(--color-accent);
+  cursor: pointer;
+
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+}
+
+#agree_policy:checked {
+  background-color: var(--color-primary);
+  border: none;
+
+  background-image: url("../assets/icons/contact/check.svg");
+  background-size: 12px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: none;
+}
+
+#agree_and_submit:has(#agree_policy:invalid):has(#send_btn:active) .error_msg {
+  display: block;
 }
 
 #pref_link {
   font-family: var(--palanquin);
   font-weight: 900px;
   font-size: 15px;
+  color: var(--color-primary);
+  margin-inline: 3px;
+}
+
+#pref_link:hover {
+  font-family: var(--palanquin_dark);
+  font-weight: 900px;
+  font-size: 15px;
+}
+
+.error_msg {
+  display: none;
+  font-family: var(--palanquin);
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(185, 16, 47, 1);
+}
+
+#send_btn {
+  width: 140px;
+  height: 48px;
+
+  padding-top: 7px;
+  padding-inline: 40px;
+
+  font-family: var(--arima);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 5%;
+
+  background-color: var(--color-primary);
+  border-radius: 40px;
+  border-style: none;
+
+  cursor: pointer;
+}
+
+#send_btn:hover {
+  text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(78, 164, 135, 0.3);
+  transition: all 300ms linear;
+}
+
+#send_btn:active {
+  background-color: unset;
+  color: rgba(115, 115, 115, 1);
+
+  padding-top: 7px;
+  padding-inline: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(48, 48, 48, 0.5);
+  transition: all 100ms linear;
+  transform: translateY(2px);
 }
 
 /* #endregion contact */

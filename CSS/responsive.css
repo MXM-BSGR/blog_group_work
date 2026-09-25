@@ -13,7 +13,8 @@
     max-width: 1440px;
   }
   #faq_section {
-    max-width: 1440px;
+    width: 1200px;
+    padding-inline: 0;
   }
 }
 

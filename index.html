@@ -183,7 +183,7 @@
 
         <section id="faq_details_section">
           <div id="story_behind">
-            <details open class="faq_detail">
+            <details  class="faq_detail">
               <summary class="summary_area">
                 What’s the story behind my travel blog?
                 <div>
@@ -203,7 +203,7 @@
             </details>
           </div>
           <div id="travel_tipps">
-            <details open class="faq_detail">
+            <details class="faq_detail">
               <summary class="summary_area">
                 How do I plan, document, and share my travels?
                 <div>
@@ -223,7 +223,7 @@
             </details>
           </div>
           <div id="how_to_collaborate">
-            <details open class="faq_detail">
+            <details class="faq_detail">
               <summary class="summary_area">
                 How can brands, companies, or fellow creators collaborate with
                 me or get in touch?
@@ -244,7 +244,7 @@
             </details>
           </div>
           <div id="how_to_support">
-            <details open class="faq_detail">
+            <details class="faq_detail">
               <summary class="summary_area">
                 How can readers support this blog and the work behind it?
                 <div>
@@ -291,22 +291,24 @@
           </form>
         </section>
         <section id="agree_and_submit">
-          <div id="agree_area">
-            <form>
-              <input type="checkbox" id="aggree_policiy" />
-              <label for="aggree_policiy">
-                I've read the
-                <span
-                  ><a id="pref_link" href="../pages/cookie_prefs.html"
+          <div id="agree_container">
+            <div id="agree_area">
+              <form id="check_and_policy" novalidate>
+                <input type="checkbox" id="agree_policy" required />
+                <label for="agree_policiy">
+                  I've read the
+                  <a id="pref_link" href="../pages/cookie_prefs.html"
                     >privacy policy</a
-                  ></span
-                >
-                and agree to the processing of my data as outlined.
-              </label>
-            </form>
+                  >
+                  and agree to the processing of my data as outlined.
+                </label>
+              
+            </div>
+            <p class="error_msg">Please accept the privacy policy.</p>
           </div>
-          <form>
-            <input type="submit" id="send_btn" value="Send" />
+
+          <input type="submit" id="send_btn" value="Send" />
+
           </form>
         </section>
       </section>

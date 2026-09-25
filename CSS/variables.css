@@ -1,4 +1,9 @@
-:root{
-    --arima: 'Arima';
-    --palanquin: 'Palanquin';
+:root {
+  /* Fonts */
+  --arima: "Arima";
+  --palanquin: "Palanquin";
+  --palanquin_dark: "Palanquin Dark";
+
+  /* Colors */
+  --secondary_brown: rgba(84, 55, 13, 1);
 }
