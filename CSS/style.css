@@ -496,7 +496,11 @@ details[open] {
 
     margin-top: 16px;
 
-    gap: 32px;
+    gap: 28px;
+}
+
+#agree_container {
+    height: 53px;
 }
 
 #agree_area {
