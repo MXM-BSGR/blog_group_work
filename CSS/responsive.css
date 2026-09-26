@@ -294,9 +294,10 @@ main {
 /* #region FOOTER responsive */
 @media screen and (max-width: 767px) {
     footer {
+        /* height: 240px; */
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
 
         padding: 30px;
@@ -307,9 +308,21 @@ main {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap:
-            16px,
-            calc((100vw - 768px) / 2) 36px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #nav_bar_mobile {
+        display: none;
+    }
+
+    footer {
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    footer {
+        margin-bottom: 88px;
     }
 }
 
