@@ -1,9 +1,10 @@
 :root {
-  /* Fonts */
-  --arima: "Arima";
-  --palanquin: "Palanquin";
-  --palanquin_dark: "Palanquin Dark";
+    /* Fonts */
+    --arima: "Arima";
+    --palanquin: "Palanquin";
+    --palanquin_dark: "Palanquin Dark";
+    --roboto_mono: "Roboto Mono";
 
-  /* Colors */
-  --secondary_brown: rgba(84, 55, 13, 1);
+    /* Colors */
+    --secondary_brown: rgba(84, 55, 13, 1);
 }

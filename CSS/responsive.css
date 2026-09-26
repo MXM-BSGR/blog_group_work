@@ -1,3 +1,33 @@
+/* #region MAIN responsive */
+main {
+    gap: 80px;
+}
+/* #endregion */
+
+/* #region HEADER responsive */
+@media screen and (max-width: 845px) {
+    /* #header_section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4ea487;
+    } */
+
+    /* .logo_and_nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(70px, calc((100vw - 845px) / 2), 100px);
+        padding: 32px;
+    } */
+
+    /* ul {
+        gap: clamp(40px, 50% - 420px, 72px);
+    } */
+}
+/* #endregion */
+
 /* #region Responsive(Hero) */
 @media screen and (min-width: 1441px) {
     main {
@@ -172,4 +202,119 @@
         }
     }
 }
+/* #endregion */
+
+/* #region FAQ responsive */
+
+@media screen and (max-width: 767px) {
+    #faq_section {
+        padding: 0 20px;
+        gap: 32px;
+    }
+
+    #header_faq_section h2 {
+        font-size: 40px;
+    }
+    #header_faq_section img {
+        width: 40px;
+        height: 40 px;
+    }
+
+    summary {
+        font-size: 16px;
+    }
+
+    details[open] {
+        gap: 8px;
+    }
+
+    #faq_details_section {
+        gap: 16px;
+    }
+}
+
+/* #endregion */
+
+/* #region Contact Form responsive */
+@media screen and (max-width: 600px) {
+    #contact_section {
+        padding-inline: clamp(20px, calc((100vw - 600px) / 2), 70px);
+        margin-bottom: 80px;
+    }
+
+    #header_contact_sec h2 {
+        font-size: 40px;
+    }
+    #header_contact_sec img {
+        width: 30px;
+        height: 35px;
+    }
+
+    #contact_area {
+        width: 100%;
+        margin-top: 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        font-family: var(--palanquin);
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .contact_input_row {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact_input_one_line {
+        width: 100%;
+    }
+
+    .row_container {
+        width: 100%;
+    }
+
+    #agree_area {
+        font-family: var(--palanquin);
+        font-weight: 400px;
+        font-size: 15px;
+    }
+    #agree_area label {
+        min-width: 260px;
+    }
+
+    #agree_policy {
+        min-width: 18px;
+        height: 18px;
+    }
+}
+/* #endregion */
+
+/* #region FOOTER responsive */
+@media screen and (max-width: 767px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 30px;
+
+        gap: 20px;
+    }
+    .footer_content_left {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:
+            16px,
+            calc((100vw - 768px) / 2) 36px;
+    }
+}
+
+/* #endregion */
+
+/* #region ... responsive */
+
 /* #endregion */

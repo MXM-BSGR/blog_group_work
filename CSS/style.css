@@ -360,6 +360,7 @@ summary {
     font-family: var(--palanquin);
     font-weight: 700;
     font-size: 24px;
+    line-height: 120%;
 
     color: #54370d;
 }
@@ -399,6 +400,7 @@ details[open] {
     font-size: 16px;
     font-weight: 500;
     color: #54370d;
+    line-height: 120%;
 }
 
 /* #endregion faq */
@@ -406,7 +408,7 @@ details[open] {
 /* #region contact*/
 
 #contact_section {
-    padding-inline: 170px;
+    padding-inline: clamp(70px, calc((100vw - 845px) / 2), 170px);
     margin-bottom: 120px;
 }
 
@@ -455,7 +457,7 @@ details[open] {
 }
 
 .row_container {
-    width: 530px;
+    width: clamp(200px, calc((100vw - 200px) / 2), 530px);
     height: 95px;
 
     display: flex;
@@ -464,28 +466,25 @@ details[open] {
 
     gap: 17px;
 }
+.row_container label {
+    width: fit-content;
+}
 
-.contact_input_row input {
+.input_field {
+    font-family: var(--roboto_mono);
     border: none;
     border-bottom: 1px solid #000;
     color: var(--color-primary);
     outline: none;
     font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
     padding: unset;
 }
 
 .contact_input_one_line {
     display: flex;
     flex-direction: column;
-}
-
-.contact_input_one_line input {
-    border: none;
-    border-bottom: 1px solid #000;
-    color: var(--color-primary);
-    outline: none;
-    font-size: 24px;
-    padding: unset;
 }
 
 #agree_and_submit {
@@ -507,9 +506,12 @@ details[open] {
     font-family: var(--palanquin);
     font-weight: 400px;
     font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0;
 }
 
 #check_and_policy {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -521,10 +523,9 @@ details[open] {
     appearance: none;
     -webkit-appearance: none;
 
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
 
-    margin: 3px;
     border: 2px solid var(--secondary_brown);
     border-radius: 2px;
     background-color: #f8fafc;
@@ -533,7 +534,6 @@ details[open] {
     vertical-align: middle;
     transition: all 0.2s ease-in-out;
 
-    /* Für das Zentrieren des Häkchens */
     display: inline-grid;
     place-content: center;
 }
@@ -567,7 +567,7 @@ details[open] {
     font-weight: 900px;
     font-size: 15px;
     color: var(--color-primary);
-    margin-inline: 3px;
+    letter-spacing: 0;
 }
 
 #pref_link:hover {
