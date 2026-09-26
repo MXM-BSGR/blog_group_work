@@ -558,7 +558,7 @@ details[open] {
     transition: none;
 }
 
-#agree_and_submit:has(#agree_policy:invalid):has(#send_btn:active) .error_msg {
+#agree_and_submit:has(#agree_policy:invalid):has(#send_btn:hover) .error_msg {
     display: block;
 }
 
@@ -610,7 +610,7 @@ details[open] {
     transition: all 300ms linear;
 }
 
-#send_btn:active {
+#send_btn:disabled {
     background-color: unset;
     color: rgba(115, 115, 115, 1);
 
@@ -621,6 +621,20 @@ details[open] {
     border-color: rgba(48, 48, 48, 0.5);
     transition: all 100ms linear;
     transform: translateY(2px);
+    cursor: no-drop;
+}
+
+#agree_and_submit:has(#agree_policy:checked) #send_btn {
+    color: var(--color-accent);
+    border-style: none;
+
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+#agree_and_submit:has(#agree_policy:invalid) #send_btn:hover {
+    text-shadow: unset;
+    box-shadow: unset;
+    transition: none;
 }
 
 /* #endregion contact */
