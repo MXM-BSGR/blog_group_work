@@ -7,4 +7,8 @@
 
     /* Colors */
     --secondary_brown: rgba(84, 55, 13, 1);
+
+    --color-primary: rgba(78, 164, 135, 1);
+    --color-accent: rgba(241, 201, 83, 1);
+    --color-primary-light: rgba(78, 164, 135, 0.2);
 }
