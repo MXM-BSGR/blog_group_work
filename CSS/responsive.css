@@ -405,12 +405,22 @@ main {
     footer {
         margin-bottom: 88px;
     }
+
+    #nav_bar_mobile {
+        display: none;
+    }
 }
 @media screen and (max-width: 480px) {
     .footer_content_left {
         display: flex;
         flex-direction: column-reverse;
         gap: 30px;
+    }
+
+    #nav_bar_mobile {
+        display: block;
+        display: flex;
+        justify-content: center;
     }
 }
 
