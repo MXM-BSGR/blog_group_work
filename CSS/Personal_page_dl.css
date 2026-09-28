@@ -1,4 +1,4 @@
-/* #region Fonts */
+/* #region Fonts (lokal) */
 @font-face {
     font-family: "Cinzel";
     src: url("../assets/fonts/cinzel/cinzel-latin-500.woff2") format("woff2");
@@ -455,6 +455,7 @@ main {
 
 /* #region Share CTA */
 .share-cta {
+    position: relative;
     text-align: center;
     margin-bottom: 24px;
 }
@@ -466,10 +467,30 @@ main {
     margin-bottom: 28px;
 }
 
-.share-cta button {
+/* unsichtbare Checkbox: speichert, ob der Button schon geklickt wurde (kein JS nötig) */
+.share_toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.share_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+}
+
+.share_button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
     background: var(--primary);
     color: var(--bg);
-    border: none;
     font-family: "Cinzel", serif;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -477,11 +498,63 @@ main {
     padding: 14px 32px;
     border-radius: 40px;
     cursor: pointer;
+    user-select: none;
     transition: background 0.2s;
 }
 
-.share-cta button:hover {
+.share_button:hover {
     background: var(--accent);
+}
+
+.share_button img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0);
+}
+
+.share_links {
+    display: none;
+    align-items: center;
+    gap: 14px;
+}
+
+.share_links > img {
+    width: 28px;
+    height: 28px;
+    filter: var(--icon-filter);
+}
+
+.share_links ul {
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.share_links a {
+    color: var(--accent);
+    font-size: 1.15rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s;
+}
+
+.share_links a:hover {
+    color: var(--white);
+}
+
+/* Zustand nach dem Klick: Icon wandert aus dem Button raus, Links erscheinen */
+.share_toggle:checked ~ .share_row .share_button img {
+    display: none;
+}
+
+.share_toggle:checked ~ .share_row .share_links {
+    display: flex;
+}
+
+/* Tastatur-Fokus */
+.share_toggle:focus-visible ~ .share_row .share_button {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
 }
 /* #endregion */
 
