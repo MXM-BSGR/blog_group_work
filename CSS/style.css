@@ -9,6 +9,10 @@
     --color-primary-light: rgba(78, 164, 135, 0.2);
 } */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
 }
