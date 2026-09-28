@@ -1,4 +1,4 @@
-   <!doctype html>
+<!doctype html>
 <html lang="de">
     <head>
         <meta charset="UTF-8" />
@@ -18,75 +18,96 @@
 
     <body>
         <header id="header_section">
-            <section class="logo_and_nav">
-                <a href="index.html">
-                    <img
-                        id="header_logo"
-                        src="./assets/icons/header/travel_blog_logo.svg"
-                        alt="travel_blog_logo"
-                    />
-                </a>
-                <nav>
-                    <ul>
-                        <li class="nav_link nav_link_highlights">
-                            <a
-                                id="nav_link_highlights"
-                                href="#highlights_section"
-                                >Highlights</a
-                            >
-                            <img
-                                id="nav_img_highlights"
-                                src="./assets/img/header/nav_link_highlights_underline.svg"
-                            />
-                        </li>
-                        <li class="nav_link nav_link_faq">
-                            <a id="nav_link_faq" href="#faq_section">FAQ</a>
-                            <img
-                                id="nav_img_faq"
-                                src="./assets/img/header/nav_link_faq_underline.svg"
-                            />
-                        </li>
-                        <li class="nav_link nav_link_contact">
-                            <a id="nav_link_contact" href="#contact_section"
-                                >Contact</a
-                            >
-                            <img
-                                id="nav_img_contact"
-                                src="./assets/img/header/nav_link_contact_underline.svg"
-                            />
-                        </li>
-                    </ul>
-                </nav>
-            </section>
-    
- <!-- <section id="nav_bar_mobile"> 
+            <div class="header_content_wrapper">
+                <section class="logo_and_nav">
+                    <a href="index.html">
+                        <img
+                            id="header_logo"
+                            src="./assets/icons/header/travel_blog_logo.svg"
+                            alt="travel_blog_logo"
+                        />
+                    </a>
+                    <nav>
+                        <ul>
+                            <li class="nav_link nav_link_highlights">
+                                <a
+                                    id="nav_link_highlights"
+                                    href="#highlights_section"
+                                    >Highlights</a
+                                >
+                                <img
+                                    id="nav_img_highlights"
+                                    src="./assets/img/header/nav_link_highlights_underline.svg"
+                                />
+                            </li>
+                            <li class="nav_link nav_link_faq">
+                                <a id="nav_link_faq" href="#faq_section">FAQ</a>
+                                <img
+                                    id="nav_img_faq"
+                                    src="./assets/img/header/nav_link_faq_underline.svg"
+                                />
+                            </li>
+                            <li class="nav_link nav_link_contact">
+                                <a id="nav_link_contact" href="#contact_section"
+                                    >Contact</a
+                                >
+                                <img
+                                    id="nav_img_contact"
+                                    src="./assets/img/header/nav_link_contact_underline.svg"
+                                />
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
 
-        <nav class="nav_mobile">
-          <ul>
-            <li >
-              <a class="mobile_nav_link" id="mobile_nav_link_home" href="#header_section"
-                ><img src="./assets/icons/mobile_nav/home_mobile.svg" alt="house_icon"></a
-              >
-            <li >
-              <a class="mobile_nav_link" id="mobile_nav_link_highlights" href="#highlights_section"
-                ><img src="./assets/icons/mobile_nav/rocket_launch_mobile.svg" alt="rocket_icon"></a
-              >
-            <li >
-              <a class="mobile_nav_link" id="mobile_nav_link_faq" href="#faq_section"
-                ><img src="./assets/icons/mobile_nav/question_mark_mobile.svg" alt="questionmark_icon"></a
-              >
-            <li>
-              <a class="mobile_nav_link" id="mobile_nav_link_contact" href="#contact_section"
-                ><img src="./assets/icons/mobile_nav/person_pin_mobile.svg" alt="person_pin_icon"></a
-              >
-            
-          </ul>
-        </nav>
-
-
-      </section> -->
-
-    </header>
+                <section id="nav_bar_mobile">
+                    <nav class="nav_mobile">
+                        <ul>
+                            <li>
+                                <a
+                                    class="mobile_nav_link"
+                                    id="mobile_nav_link_home"
+                                    href="#header_section"
+                                    ><img
+                                        src="./assets/icons/mobile_nav/home_mobile.svg"
+                                        alt="house_icon"
+                                /></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="mobile_nav_link"
+                                    id="mobile_nav_link_highlights"
+                                    href="#highlights_section"
+                                    ><img
+                                        src="./assets/icons/mobile_nav/rocket_launch_mobile.svg"
+                                        alt="rocket_icon"
+                                /></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="mobile_nav_link"
+                                    id="mobile_nav_link_faq"
+                                    href="#faq_section"
+                                    ><img
+                                        src="./assets/icons/mobile_nav/question_mark_mobile.svg"
+                                        alt="questionmark_icon"
+                                /></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="mobile_nav_link"
+                                    id="mobile_nav_link_contact"
+                                    href="#contact_section"
+                                    ><img
+                                        src="./assets/icons/mobile_nav/person_pin_mobile.svg"
+                                        alt="person_pin_icon"
+                                /></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </header>
 
         <main>
             <section class="hero">
@@ -147,11 +168,17 @@
                     </p>
                 </div>
 
-
-        <div class="highlights-slider">
-          <input type="radio" name="highlight-slide" id="hl1" checked />
-          <input type="radio" name="highlight-slide" id="hl2" />  <!-- Dennis -->
-          <input type="radio" name="highlight-slide" id="hl3" /> <!-- Maxim -->
+                <div class="highlights-slider">
+                    <input
+                        type="radio"
+                        name="highlight-slide"
+                        id="hl1"
+                        checked
+                    />
+                    <input type="radio" name="highlight-slide" id="hl2" />
+                    <!-- Dennis -->
+                    <input type="radio" name="highlight-slide" id="hl3" />
+                    <!-- Maxim -->
 
                     <div class="highlights-slides">
                         <article class="highlight-slide">
@@ -192,201 +219,260 @@
                             </div>
                         </article>
 
-            <article class="highlight-slide">
-              <a> <!-- hier Link auf meinen Blog -->
-              <img src="assets/img/highlights/slide3.jpg" alt="" />
-              </a>
-              <div class="highlight-text">
-                <h3>Titel Slide 3</h3>
-                <p>Text Slide 3</p>
-              </div>
-            </article>
+                        <article class="highlight-slide">
+                            <a>
+                                <!-- hier Link auf meinen Blog -->
+                                <img
+                                    src="assets/img/highlights/slide3.jpg"
+                                    alt=""
+                                />
+                            </a>
+                            <div class="highlight-text">
+                                <h3>Titel Slide 3</h3>
+                                <p>Text Slide 3</p>
+                            </div>
+                        </article>
+                    </div>
 
-
-          </div>
-
-          <div class="highlights-dots">
-            <label for="hl1"></label>
-            <label for="hl2"></label>
-            <label for="hl3"></label>
-
-          </div>
-        </div>
-      </section>
-      <section id="faq_section">
-        <header id="header_faq_section">
-          <img
-            src="./assets/icons/faq/question_mark.svg"
-            alt="question_mark_icon"
-          />
-          <h2>FAQ</h2>
-        </header>
-
-        <section id="faq_details_section">
-          <div id="story_behind">
-            <details  class="faq_detail">
-              <summary class="summary_area">
-                What’s the story behind my travel blog?
-                <div>
-                  <img
-                    class="details_opener"
-                    src="./assets/icons/faq/arrow_faq_details.svg"
-                    alt="opener_symbol"
-                  />
+                    <div class="highlights-dots">
+                        <label for="hl1"></label>
+                        <label for="hl2"></label>
+                        <label for="hl3"></label>
+                    </div>
                 </div>
-              </summary>
-              <p class="summary_text">
-                It all started with a simple backpack and a one-way ticket, driven by a deep curiosity to see the world beyond the usual tourist paths. What began as a personal journal to keep friends and family updated quickly turned into a passion project dedicated to sharing authentic travel stories, hidden gems, and honest guides for fellow explorers.
-              </p>
-            </details>
-          </div>
-          <div id="travel_tipps">
-            <details class="faq_detail">
-              <summary class="summary_area">
-                How do I plan, document, and share my travels?
-                <div>
-                  <img
-                    class="details_opener"
-                    src="./assets/icons/faq/arrow_faq_details.svg"
-                    alt="opener_symbol"
-                  />
-                </div>
-              </summary>
-              <p class="summary_text">
-I usually start with a rough itinerary and a lot of research, but I always leave room for spontaneous detours. On the road, I capture moments through my camera, daily journal entries, and smartphone notes, which I later turn into structured guides, stories, and tips here on the blog to help you plan your own adventures.
-              </p>
-            </details>
-          </div>
-          <div id="how_to_collaborate">
-            <details class="faq_detail">
-              <summary class="summary_area">
-                How can brands, companies, or fellow creators collaborate with
-                me or get in touch?
-                <div>
-                  <img
-                    class="details_opener"
-                    src="./assets/icons/faq/arrow_faq_details.svg"
-                    alt="opener_symbol"
-                  />
-                </div>
-              </summary>
-              <p class="summary_text">
-I’m always open to partnering with brands, tourism boards, and creators whose values align with sustainable and meaningful travel. Whether you're interested in sponsored content, photography, or collaborations, you can reach out via the contact form on my site or drop me a direct email.
-              </p>
-            </details>
-          </div>
-          <div id="how_to_support">
-            <details class="faq_detail">
-              <summary class="summary_area">
-                How can readers support this blog and the work behind it?
-                <div>
-                  <img
-                    class="details_opener"
-                    src="./assets/icons/faq/arrow_faq_details.svg"
-                    alt="opener_symbol"
-                  />
-                </div>
-              </summary>
-              <p class="summary_text">
-The best way to support this blog is simply by reading, sharing your thoughts in the comments, and spreading the word with fellow travelers. You can also support my work by using my affiliate links for your bookings, engaging with my social media channels, or buying me a virtual coffee.
-              </p>
-            </details>
-          </div>
-        </section>
-      </section>
-      <section id="contact_section">
-        <header id="header_contact_sec">
-          <img src="./assets/icons/contact/person_pin.svg" alt="person_pin" />
-          <h2>Contact form</h2>
-        </header>
-        <p id="contact_info">
-          Have a question or an idea to collaborate?<br />Get in touch—I’d love
-          to hear from you and explore how we can work together.
-        </p>
-        <section id="contact_area">
-          <form class="contact_input_row">
-            <div class="row_container">
-              <label for="enter_your_name">What´s your name?</label>
-              <input class="input_field" type="text" id="enter_your_name" />
+            </section>
+            <section id="faq_section">
+                <header id="header_faq_section">
+                    <img
+                        src="./assets/icons/faq/question_mark.svg"
+                        alt="question_mark_icon"
+                    />
+                    <h2>FAQ</h2>
+                </header>
+
+                <section id="faq_details_section">
+                    <div id="story_behind">
+                        <details class="faq_detail">
+                            <summary class="summary_area">
+                                What’s the story behind my travel blog?
+                                <div>
+                                    <img
+                                        class="details_opener"
+                                        src="./assets/icons/faq/arrow_faq_details.svg"
+                                        alt="opener_symbol"
+                                    />
+                                </div>
+                            </summary>
+                            <p class="summary_text">
+                                It all started with a simple backpack and a
+                                one-way ticket, driven by a deep curiosity to
+                                see the world beyond the usual tourist paths.
+                                What began as a personal journal to keep friends
+                                and family updated quickly turned into a passion
+                                project dedicated to sharing authentic travel
+                                stories, hidden gems, and honest guides for
+                                fellow explorers.
+                            </p>
+                        </details>
+                    </div>
+                    <div id="travel_tipps">
+                        <details class="faq_detail">
+                            <summary class="summary_area">
+                                How do I plan, document, and share my travels?
+                                <div>
+                                    <img
+                                        class="details_opener"
+                                        src="./assets/icons/faq/arrow_faq_details.svg"
+                                        alt="opener_symbol"
+                                    />
+                                </div>
+                            </summary>
+                            <p class="summary_text">
+                                I usually start with a rough itinerary and a lot
+                                of research, but I always leave room for
+                                spontaneous detours. On the road, I capture
+                                moments through my camera, daily journal
+                                entries, and smartphone notes, which I later
+                                turn into structured guides, stories, and tips
+                                here on the blog to help you plan your own
+                                adventures.
+                            </p>
+                        </details>
+                    </div>
+                    <div id="how_to_collaborate">
+                        <details class="faq_detail">
+                            <summary class="summary_area">
+                                How can brands, companies, or fellow creators
+                                collaborate with me or get in touch?
+                                <div>
+                                    <img
+                                        class="details_opener"
+                                        src="./assets/icons/faq/arrow_faq_details.svg"
+                                        alt="opener_symbol"
+                                    />
+                                </div>
+                            </summary>
+                            <p class="summary_text">
+                                I’m always open to partnering with brands,
+                                tourism boards, and creators whose values align
+                                with sustainable and meaningful travel. Whether
+                                you're interested in sponsored content,
+                                photography, or collaborations, you can reach
+                                out via the contact form on my site or drop me a
+                                direct email.
+                            </p>
+                        </details>
+                    </div>
+                    <div id="how_to_support">
+                        <details class="faq_detail">
+                            <summary class="summary_area">
+                                How can readers support this blog and the work
+                                behind it?
+                                <div>
+                                    <img
+                                        class="details_opener"
+                                        src="./assets/icons/faq/arrow_faq_details.svg"
+                                        alt="opener_symbol"
+                                    />
+                                </div>
+                            </summary>
+                            <p class="summary_text">
+                                The best way to support this blog is simply by
+                                reading, sharing your thoughts in the comments,
+                                and spreading the word with fellow travelers.
+                                You can also support my work by using my
+                                affiliate links for your bookings, engaging with
+                                my social media channels, or buying me a virtual
+                                coffee.
+                            </p>
+                        </details>
+                    </div>
+                </section>
+            </section>
+            <section id="contact_section">
+                <header id="header_contact_sec">
+                    <img
+                        src="./assets/icons/contact/person_pin.svg"
+                        alt="person_pin"
+                    />
+                    <h2>Contact form</h2>
+                </header>
+                <p id="contact_info">
+                    Have a question or an idea to collaborate?<br />Get in
+                    touch—I’d love to hear from you and explore how we can work
+                    together.
+                </p>
+                <section id="contact_area">
+                    <form class="contact_input_row">
+                        <div class="row_container">
+                            <label for="enter_your_name"
+                                >What´s your name?</label
+                            >
+                            <input
+                                class="input_field"
+                                type="text"
+                                id="enter_your_name"
+                            />
+                        </div>
+                        <div class="row_container">
+                            <label for="enter_your_email"
+                                >What´s your email?</label
+                            >
+                            <input
+                                class="input_field"
+                                type="text"
+                                id="enter_your_email"
+                            />
+                        </div>
+                    </form>
+
+                    <form class="contact_input_one_line">
+                        <label for="how_can_i_help">How can i help?</label>
+                        <input
+                            class="input_field"
+                            type="text"
+                            id="how_can_i_help"
+                        />
+                    </form>
+                </section>
+                <section id="agree_and_submit">
+                    <div id="agree_container">
+                        <div id="agree_area">
+                            <form id="check_and_policy" novalidate>
+                                <input
+                                    type="checkbox"
+                                    id="agree_policy"
+                                    required
+                                />
+                                <label for="agree_policy">
+                                    I've read the
+                                    <a
+                                        id="pref_link"
+                                        href="../pages/cookie_prefs.html"
+                                        >privacy policy</a
+                                    >
+                                    and agree to the processing of my data as
+                                    outlined.
+                                </label>
+                            </form>
+                        </div>
+                        <p class="error_msg">
+                            Please accept the privacy policy.
+                        </p>
+                    </div>
+
+                    <input type="submit" id="send_btn" value="Send" disabled />
+
+                    <!-- </form> -->
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer_content">
+                <section class="footer_content_left">
+                    <div class="copyright">
+                        <img
+                            src="./assets\icons\footer\copyright_logo.svg"
+                            alt=""
+                        />
+                        <a href="index.html#header_section">Travel Blog 2026</a>
+                    </div>
+                    <div class="imp_prefs_container">
+                        <a href="./pages/imprint.html">Imprint</a>
+                        <a href="./pages/cookie_prefs.html"
+                            >Cookie Preferences</a
+                        >
+                    </div>
+                </section>
             </div>
-            <div class="row_container">
-              <label for="enter_your_email">What´s your email?</label>
-              <input class="input_field" type="text" id="enter_your_email" />
-            </div>
-          </form>
 
-          <form class="contact_input_one_line">
-            <label for="how_can_i_help">How can i help?</label>
-            <input class="input_field" type="text" id="how_can_i_help" />
-          </form>
-        </section>
-        <section id="agree_and_submit">
-          <div id="agree_container">
-            <div id="agree_area">
-              <form id="check_and_policy" novalidate>
-                <input type="checkbox" id="agree_policy" required />
-                <label for="agree_policiy">
-                  I've read the
-                  <a id="pref_link" href="../pages/cookie_prefs.html"
-                    >privacy policy</a
-                  >
-                  and agree to the processing of my data as outlined.
-                </label>
-              
-            </div>
-            <p class="error_msg">Please accept the privacy policy.</p>
-          </div>
-
-          <input type="submit" id="send_btn" value="Send" disabled />
-
-          </form>
-        </section>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer_content">
-      <section class="footer_content_left">
-        <div class="copyright">
-          <img src="./assets\icons\footer\copyright_logo.svg" alt="" />
-          <a href="index.html#header_section">Travel Blog 2026</a>
-        </div>
-        <div class="imp_prefs_container">
-        <a href="./pages/imprint.html">Imprint</a>
-        <a href="./pages/cookie_prefs.html">Cookie Preferences</a>
-      </diV>
-      </section>
-
-      <section class="external_links">
-        <a href="https://www.tiktok.com" target="_blank"
-          ><img
-            class="external_links_logo"
-            src="./assets\icons\footer\tiktok_logo.svg"
-            alt="tiktok_icon"
-        /></a>
-        <a href="https://www.youtube.com/" target="_blank"
-          ><img
-            class="external_links_logo"
-            src="./assets\icons\footer\youtube_logo.svg"
-            alt="youtube_icon"
-        /></a>
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img
-            class="external_links_logo"
-            src="./assets\icons\footer\facebook_logo.svg"
-            alt="facebook_icon"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img
-            class="external_links_logo"
-            src="./assets\icons\footer\instagram_logo.svg"
-            alt="instagram_icon"
-        /></a>
-      </section>
-
-    </footer>
-  </body>
+            <section class="external_links">
+                <a href="https://www.tiktok.com" target="_blank"
+                    ><img
+                        class="external_links_logo"
+                        src="./assets\icons\footer\tiktok_logo.svg"
+                        alt="tiktok_icon"
+                /></a>
+                <a href="https://www.youtube.com/" target="_blank"
+                    ><img
+                        class="external_links_logo"
+                        src="./assets\icons\footer\youtube_logo.svg"
+                        alt="youtube_icon"
+                /></a>
+                <a href="https://www.facebook.com/" target="_blank"
+                    ><img
+                        class="external_links_logo"
+                        src="./assets\icons\footer\facebook_logo.svg"
+                        alt="facebook_icon"
+                /></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                    ><img
+                        class="external_links_logo"
+                        src="./assets\icons\footer\instagram_logo.svg"
+                        alt="instagram_icon"
+                /></a>
+            </section>
+        </footer>
+    </body>
 </html>
-
-
-

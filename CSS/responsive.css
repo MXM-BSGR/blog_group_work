@@ -5,6 +5,28 @@ main {
 /* #endregion */
 
 /* #region HEADER responsive */
+@media screen and (min-width: 1441px) {
+    #header_section {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #4ea487;
+    }
+
+    .header_content_wrapper {
+        width: 100%;
+        max-width: 1440px;
+
+        display: flex;
+        justify-content: flex-start;
+        padding-block: 32px;
+        padding: 32px clamp(20px, calc(655.8px - 35.82vw), 140px);
+        /* margin: 0 auto; */
+    }
+}
 
 @media screen and (max-width: 480px) {
     #header_section {
