@@ -74,3 +74,9 @@ h1 {
     width: 30px;
     height: 34px;
 }
+
+@media screen and (max-width: 480px) {
+    footer {
+        margin-bottom: 88px;
+    }
+}

@@ -28,7 +28,6 @@ body {
     justify-content: flex-start;
 
     padding: 32px clamp(64px, calc(-84.9px + 19.39vw), 140px);
-    /* margin: 0 auto; */
 }
 
 .logo_and_nav {
@@ -223,6 +222,7 @@ footer {
     display: flex;
 
     font-size: 16px;
+    line-height: 1.2;
     color: #ffffff;
     text-decoration: none;
 }
