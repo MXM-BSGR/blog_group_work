@@ -106,9 +106,14 @@ a {
     border: 1px solid var(--primary);
     color: var(--text-secondary);
     text-align: center;
-    font-family: "EB Garamond", serif;
-    font-size: 0.9rem;
     padding: 8px;
+}
+
+.header_content_wrapper,
+.footer_content_wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* #region header*/
@@ -124,7 +129,7 @@ a {
 
 .logo_and_nav {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 
     gap: clamp(32px, 8vw, 102px);
@@ -155,7 +160,7 @@ ul {
 }
 
 .nav_link_highlights img {
-    width: 120px;
+    width: 155px;
     position: absolute;
     bottom: -3px;
     left: -3px;
@@ -164,7 +169,7 @@ ul {
 }
 
 .nav_link_faq img {
-    width: 55px;
+    width: 80px;
     position: absolute;
     bottom: -3px;
     left: -8px;
@@ -175,7 +180,7 @@ ul {
 }
 
 .nav_link_contact img {
-    width: 90px;
+    width: 120px;
     position: absolute;
     bottom: -3px;
     left: -4px;
@@ -226,21 +231,21 @@ main {
 
 .hero-text .kicker {
     color: var(--primary-light);
-    font-size: 1.3rem;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 8px;
 }
 
 .hero-text h1 {
     color: var(--accent);
-    font-size: 2.6rem;
+    font-size: 40px;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .hero-text p.lead {
     color: var(--text-secondary);
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-bottom: 24px;
 }
 
@@ -249,7 +254,8 @@ main {
     gap: 12px 28px;
     flex-wrap: wrap;
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 16px;
+    line-height: 1.2;
 }
 
 .meta span {
@@ -258,7 +264,6 @@ main {
     gap: 8px;
 }
 
-/* überschreibt .external_links_logo (Footer-Größe), falls die Klasse im HTML bleibt */
 .meta img {
     width: 20px;
     height: 20px;
@@ -292,17 +297,21 @@ main {
 .author-box h3 {
     color: var(--accent);
     margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
 .author-box .role {
     color: var(--primary-light);
-    font-size: 0.9rem;
+    font-size: 16px;
+    line-height: 1.2;
     margin-bottom: 12px;
 }
 
 .author-box p {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 16px;
+    line-height: 1.2;
 }
 /* #endregion */
 
@@ -314,7 +323,8 @@ main {
 .carousel-section h2 {
     text-align: center;
     color: var(--accent);
-    font-size: 1.8rem;
+    font-size: 28px;
+    line-height: 1.2;
     margin-bottom: 40px;
 }
 
@@ -394,7 +404,8 @@ main {
 /* #region Body text */
 .article-body {
     color: var(--text-secondary);
-    font-size: 1.15rem;
+    font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 56px;
 }
 
@@ -423,6 +434,8 @@ main {
     border-radius: 24px;
     padding: 40px 32px 32px;
     margin-bottom: 56px;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 .pro-tips .badge {
@@ -463,11 +476,11 @@ main {
 .share-cta p {
     color: var(--white);
     font-family: "Cinzel", serif;
-    font-size: 1.2rem;
+    font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 28px;
 }
 
-/* unsichtbare Checkbox: speichert, ob der Button schon geklickt wurde (kein JS nötig) */
 .share_toggle {
     position: absolute;
     width: 1px;
@@ -494,7 +507,7 @@ main {
     font-family: "Cinzel", serif;
     font-weight: 700;
     letter-spacing: 0.05em;
-    font-size: 1rem;
+    font-size: 22px;
     padding: 14px 32px;
     border-radius: 40px;
     cursor: pointer;
@@ -575,6 +588,17 @@ footer {
 
     background-color: var(--bg-surface);
     border-top: 1px solid var(--primary);
+}
+
+.footer_content_wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer_content_left {
