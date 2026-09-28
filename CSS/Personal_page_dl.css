@@ -741,10 +741,10 @@ footer {
         gap: 16px;
     }
 
-    .copyright a,
+    /* .copyright a,
     .footer_content_left a {
         font-size: 18px;
-    }
+    } */
 }
 
 @media (max-width: 722px) {
@@ -862,12 +862,31 @@ footer {
         padding-right: 16px;
     }
 
+    .article-body p {
+        font-size: 1rem;
+    }
+
+    .article-body ol li {
+        font-size: 1rem;
+    }
+
     .pro-tips {
         padding: 40px 16px 24px;
     }
 
+    .pro-tips ol li {
+        font-size: 1rem;
+    }
     .pro-tips .badge {
         left: 16px;
+    }
+
+    .footer_content_left {
+        font-size: 12px;
+    }
+
+    .external_links_logo {
+        height: 24px;
     }
 }
 /* #endregion */
