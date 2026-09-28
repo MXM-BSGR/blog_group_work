@@ -63,14 +63,6 @@ main {
     .hero {
         height: 547px;
     }
-
-    #highlights_section {
-        max-width: 1440px;
-    }
-    #faq_section {
-        width: 1200px;
-        padding-inline: 0;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -145,6 +137,12 @@ main {
 /* #endregion */
 
 /* #region HIGHLIGHTS responsive */
+
+@media screen and (min-width: 1441px) {
+    #highlights_section {
+        max-width: 1440px;
+    }
+}
 @media screen and (max-width: 767px) {
     .highlights {
         gap: 32px;
@@ -258,6 +256,13 @@ main {
     }
 }
 
+@media screen and (min-width: 1441px) {
+    #faq_section {
+        width: 1200px;
+        padding-inline: 0px;
+    }
+}
+
 /* #endregion */
 
 /* #region Contact Form responsive */
@@ -321,7 +326,8 @@ main {
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
     #contact_section {
-        padding-inline: clamp(20px, calc((100vw - 600px) / 2), 70px);
+        width: 100%;
+        padding-inline: clamp(20px, calc(-182.1px + 42.02vw), 70px);
         margin-bottom: 80px;
     }
 
@@ -379,8 +385,14 @@ main {
 
 /* #region FOOTER responsive */
 
+@media screen and (min-width: 1441px) {
+    .footer_content {
+        max-width: 1440px;
+    }
+}
+
 @media screen and (max-width: 767px) {
-    footer {
+    .footer_content {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -396,14 +408,10 @@ main {
     #nav_bar_mobile {
         display: none;
     }
-
-    footer {
-        margin-bottom: 0px;
-    }
 }
 @media screen and (max-width: 600px) {
     footer {
-        margin-bottom: 88px;
+        margin-bottom: 0px;
     }
 
     #nav_bar_mobile {
@@ -411,6 +419,9 @@ main {
     }
 }
 @media screen and (max-width: 480px) {
+    footer {
+        margin-bottom: 88px;
+    }
     .footer_content_left {
         display: flex;
         flex-direction: column-reverse;

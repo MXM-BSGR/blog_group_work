@@ -9,6 +9,10 @@
     --color-primary-light: rgba(78, 164, 135, 0.2);
 } */
 
+body {
+    width: 100%;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -290,6 +294,7 @@
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -408,7 +413,8 @@ details[open] {
 /* #region contact*/
 
 #contact_section {
-    padding-inline: clamp(70px, calc((100vw - 845px) / 2), 170px);
+    width: 100%;
+    padding-inline: clamp(70px, calc(-161.3px + 30.12vw), 170px);
     margin-bottom: 120px;
 }
 
