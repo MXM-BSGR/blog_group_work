@@ -267,6 +267,12 @@ main {
 
 /* #region Contact Form responsive */
 
+@media screen and (min-width: 1441px) {
+    #contact_section {
+        max-width: 1440px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     #contact_section {
         padding-inline: clamp(20px, calc((100vw - 600px) / 2), 70px);
@@ -337,9 +343,6 @@ main {
     #header_contact_sec img {
         width: 30px;
         height: 35px;
-    }
-
-    #contact_info {
     }
 
     #contact_area {
