@@ -13,6 +13,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    gap: 90px;
 }
 
 .blog_main_header {
@@ -192,4 +194,16 @@ main {
     font-weight: 400;
 
     color: rgba(84, 55, 13, 1);
+}
+
+.intro_text {
+    width: 1200px;
+
+    font-family: var(--palanquin);
+    line-height: 1.2;
+    letter-spacing: 0;
+    font-size: 32px;
+    font-weight: 400;
+
+    color: rgba(61, 61, 61, 1);
 }
