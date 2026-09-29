@@ -1,0 +1,209 @@
+body {
+    min-height: 100vh;
+}
+
+.nf_main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px clamp(20px, calc(-157.8px + 23.15vw), 120px);
+}
+
+/* #region Bühne */
+.nf_stage {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: clamp(32px, 6vw, 96px);
+    padding: clamp(32px, 5vw, 72px);
+
+    /* gleiche Ecke wie der Highlights-Slider */
+    border-radius: 0 100px 0 0;
+    background-color: var(--color-primary-light, rgba(78, 164, 135, 0.2));
+}
+/* #endregion */
+
+/* #region 404 Zahl */
+.nf_code {
+    display: flex;
+    align-items: center;
+
+    font-family: var(--arima, "Arima", sans-serif);
+    font-weight: 700;
+    font-size: clamp(96px, 16vw, 200px);
+    line-height: 1;
+
+    color: var(--color-primary, #4ea487);
+}
+
+.nf_digit {
+    display: block;
+}
+
+/* Die 0 ist ein gelber Kreis mit Ballon */
+.nf_zero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 0.85em;
+    aspect-ratio: 1 / 1;
+    margin-inline: 0.04em;
+
+    border-radius: 50%;
+    background-color: var(--color-accent, #f1c953);
+    box-shadow: -2px 4px 10.8px rgba(0, 0, 0, 0.25);
+}
+
+.nf_balloon {
+    width: 46%;
+    height: auto;
+
+    animation: nf_float 5s ease-in-out infinite;
+}
+
+@keyframes nf_float {
+    0%,
+    100% {
+        transform: translateY(6%) rotate(-3deg);
+    }
+    50% {
+        transform: translateY(-6%) rotate(3deg);
+    }
+}
+/* #endregion */
+
+/* #region Text */
+.nf_text {
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 24px;
+}
+
+.nf_text h1 {
+    font-family: var(--arima, "Arima", sans-serif);
+    font-weight: 700;
+    font-size: clamp(36px, 4.5vw, 52px);
+    line-height: 1.1;
+
+    color: #54370d;
+}
+
+.nf_text p {
+    font-family: var(--palanquin, "Palanquin", sans-serif);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+
+    color: #54370d;
+}
+/* #endregion */
+
+/* #region Buttons */
+.nf_actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 8px;
+}
+
+.nf_btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 48px;
+    padding: 7px 32px 0;
+
+    font-family: var(--arima, "Arima", sans-serif);
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+
+    border-radius: 40px;
+    border: 2px solid var(--color-primary, #4ea487);
+
+    transition: all 300ms linear;
+}
+
+.nf_btn_primary,
+.nf_btn_primary:visited {
+    background-color: var(--color-primary, #4ea487);
+    color: var(--color-accent, #f1c953);
+}
+
+.nf_btn_secondary,
+.nf_btn_secondary:visited {
+    background-color: transparent;
+    color: var(--color-primary, #4ea487);
+}
+
+.nf_btn:hover {
+    box-shadow: 0 4px 4px rgba(78, 164, 135, 0.3);
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nf_btn_secondary:hover {
+    background-color: var(--color-primary, #4ea487);
+    color: #ffffff;
+}
+
+.nf_btn:focus-visible {
+    outline: 3px solid #54370d;
+    outline-offset: 3px;
+}
+/* #endregion */
+
+/* #region Responsive */
+@media (max-width: 768px) {
+    .nf_main {
+        padding-block: 48px 120px; /* Platz für die fixe mobile Nav unten */
+    }
+
+    .nf_stage {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 0 64px 0 0;
+    }
+
+    .nf_text {
+        align-items: center;
+    }
+
+    .nf_text p {
+        font-size: 20px;
+    }
+
+    .nf_actions {
+        justify-content: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nf_balloon {
+        animation: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nf_actions {
+        font-size: 16px;
+    }
+    .nf_btn {
+        font-size: 16px;
+    }
+}
+/* #endregion */
