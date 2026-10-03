@@ -5,12 +5,13 @@
 
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100dvh; /* ermöglicht es dem Body in Kombination mit flex: 1 im main, seine Elemente über die gesamte Bildschirmhöhe zu verteilen. Also kein Problem wenn der Content nicht die ganze Seite einnehmen kann. */
 
     display: flex;
 }
 
 main {
+    flex: 1; /* kurz Schreibweise von flex-grow: 1 und flex-shrink: 1, sorgt dafür dass das flexbox Element flexibel wird, den verfügbaren Platz im Container ausfüllt und sich gleichmäßig mit anderen Elementen den Platz teil */
     width: 100%;
     height: 100%;
     display: flex;
